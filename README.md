@@ -1,5 +1,5 @@
 # template-gulp
 https://gulpjs.com/
 
-npm install
+Rode npm install
 ``` npm i```
