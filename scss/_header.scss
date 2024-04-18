@@ -9,10 +9,10 @@ header {
     border-bottom: 2px solid #ecf2fb;
     background-color: $white;
 
-    .btn-secondary {
-        border: none;
-        text-decoration: underline;
-    }
+    // .btn-secondary {
+    //     border: none;
+    //     text-decoration: underline;
+    // }
 
     .container {
         @include flex(row, center, space-between);

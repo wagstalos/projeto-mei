@@ -2,7 +2,7 @@
 .btn-secondary {
     font-family: "Montserrat", sans-serif;
     border-radius: 12px;
-    // display: inline-block;
+
     padding: 0 3rem;
     font-size: 1.8rem;
     line-height: 4.5rem;
@@ -14,6 +14,7 @@
     font-weight: 500;
     color: $brand-black;
     transition: background-color 0.3s;
+    color: $white;
     &:hover {
         background-color: $brand-green;
     }
