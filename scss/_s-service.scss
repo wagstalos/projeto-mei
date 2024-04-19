@@ -1,0 +1,102 @@
+.s-service {
+    padding: 90px 0;
+    background: #fcfcfc;
+    .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 80px;
+    }
+    .box {
+        width: 30%;
+        background-color: $white;
+
+        border: 1px solid #ececec;
+        border-radius: 10px;
+        padding: $gutter * 2;
+        position: relative;
+
+        .badge {
+            background-color: #25cb9e;
+            padding: 4px 8px;
+            color: $white;
+            border-radius: 8px;
+            font-weight: 500;
+
+            display: table;
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .d-flex-price {
+            display: flex;
+            margin-top: $gutter * 3;
+            justify-content: space-between;
+        }
+
+        .price {
+            color: #25cb9e;
+            font-weight: 600;
+        }
+
+        ul {
+            margin-top: 5rem;
+            li {
+                display: flex;
+                font-size: 1.6rem;
+
+                margin-bottom: 2rem;
+                img {
+                    margin-right: $gutter * 2;
+                }
+            }
+        }
+
+        .btn-price {
+            background-color: #aaffe85b;
+            color: #25cb9e;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 1.6rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 60px;
+
+            transition: all 0.3s ease;
+
+            margin-bottom: $gutter * 3;
+
+            &:hover {
+                background-color: #aaffe8da;
+            }
+        }
+
+        &:hover {
+            border: 1px solid #25cb9e;
+        }
+    }
+
+    // responsive
+    @include responsive(800px) {
+    }
+
+    @include responsive(640px) {
+        .d-flex {
+            flex-direction: column-reverse;
+            margin-top: 2.5rem;
+        }
+
+        .box {
+            width: 100%;
+        }
+    }
+}

@@ -17,20 +17,8 @@
 
     // responsive
     @include responsive(800px) {
-        .text {
-            text-align: center;
-            h1 {
-                font-size: 4rem;
-            }
-            p {
-                max-width: 100%;
-            }
-            .lead {
-                align-items: center;
-                justify-content: center;
-            }
-        }
     }
+
     @include responsive(640px) {
         .d-flex {
             flex-direction: column-reverse;
