@@ -34,8 +34,13 @@
                     text-align: left;
                 }
 
+                h4 {
+                    text-align: center;
+                }
+
                 img {
-                    display: none;
+                    // display: none;
+                    margin: 0 auto;
                 }
             }
         }
