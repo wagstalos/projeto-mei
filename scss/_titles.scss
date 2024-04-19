@@ -25,7 +25,7 @@ h2 {
 h3,
 h4 {
     font-weight: 500;
-    letter-spacing: -0.5px;
+    letter-spacing: -1px;
 }
 
 h1,
@@ -34,4 +34,35 @@ h3,
 h4 {
     font-family: "Barlow", sans-serif;
     color: $gray-500;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: $gray-600;
+    opacity: 0.8;
+}
+.subtitle {
+    background-color: #d3fffa;
+    color: $brand-green;
+    width: 160px;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 2px 15px;
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.title-section {
+    font-weight: bold;
+    font-size: 3.5rem;
+
+    text-align: center;
+    margin-top: 8px;
 }

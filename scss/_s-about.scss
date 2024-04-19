@@ -1,0 +1,55 @@
+.s-about {
+    padding: 90px 0;
+
+    .d-flex {
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 8rem;
+    }
+
+    .image {
+        width: 45%;
+    }
+
+    .text {
+        width: 50%;
+    }
+
+    // responsive
+    @include responsive(800px) {
+        .text {
+            text-align: center;
+            h1 {
+                font-size: 4rem;
+            }
+            p {
+                max-width: 100%;
+            }
+            .lead {
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    @include responsive(640px) {
+        .d-flex {
+            flex-direction: column-reverse;
+            margin-top: 2.5rem;
+            .image {
+                width: 100%;
+                margin-top: 4rem;
+            }
+
+            .text {
+                width: 100%;
+                p {
+                    text-align: left;
+                }
+
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}
