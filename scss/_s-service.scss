@@ -18,7 +18,7 @@
         position: relative;
 
         .badge {
-            background-color: #25cb9e;
+            background-color: $green;
             padding: 4px 8px;
             color: $white;
             border-radius: 8px;
@@ -38,7 +38,7 @@
         }
 
         .price {
-            color: #25cb9e;
+            color: $green;
             font-weight: 600;
         }
 
@@ -57,7 +57,7 @@
 
         .btn-price {
             background-color: #aaffe85b;
-            color: #25cb9e;
+            color: $green;
             font-weight: 600;
             padding: 8px 16px;
             border-radius: 4px;
@@ -81,7 +81,7 @@
         }
 
         &:hover {
-            border: 1px solid #25cb9e;
+            border: 1px solid $green;
         }
     }
 

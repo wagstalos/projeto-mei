@@ -9,10 +9,9 @@ header {
     border-bottom: 2px solid #ecf2fb;
     background-color: $white;
 
-    // .btn-secondary {
-    //     border: none;
-    //     text-decoration: underline;
-    // }
+    .btn-secondary {
+        border: none;
+    }
 
     .container {
         @include flex(row, center, space-between);
@@ -139,7 +138,7 @@ header {
     background-color: $brand-green-light;
     padding: $gutter;
     border-radius: $border-radius * 10;
-    margin-right: $gutter;
+    margin-right: $gutter * 2;
     display: none;
     // position: fixed;
     .icons-dots {

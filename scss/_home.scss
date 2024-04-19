@@ -23,11 +23,11 @@
 
         .title {
             font-family: "Montserrat" sans-serif;
-            font-size: 4.8rem;
+            font-size: 4rem;
             line-height: 110%;
             font-weight: bold;
 
-            color: #17544e;
+            color: $brand-green-dark;
             max-width: 74rem;
         }
         .description {
@@ -72,28 +72,29 @@
         }
     }
 
-    @include responsive(800px) {
-        .text {
-            text-align: center;
-            h1 {
-                font-size: 4rem;
-            }
-            p {
-                max-width: 100%;
-            }
-            .lead {
-                align-items: center;
-                justify-content: center;
-            }
-        }
-    }
+    // @include responsive(800px) {
+    //     .text {
+    //         text-align: center;
+    //         h1 {
+    //             font-size: 4rem;
+    //         }
+    //         p {
+    //             max-width: 100%;
+    //         }
+    //         .lead {
+    //             align-items: center;
+    //             justify-content: center;
+    //         }
+    //     }
+    // }
 
-    @include responsive(640px) {
+    @include responsive(800px) {
         padding-top: 12rem;
         .d-flex {
             flex-direction: column;
         }
         .text {
+            text-align: center;
             width: 100%;
             .btn-primary {
                 margin: 0 auto;
@@ -106,6 +107,8 @@
                 font-size: 3rem;
             }
             .lead {
+                align-items: center;
+                justify-content: center;
                 span {
                     display: none;
                 }
