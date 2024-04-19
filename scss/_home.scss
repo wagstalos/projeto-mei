@@ -3,10 +3,10 @@
 
     background-color: $white;
     padding-top: 15.1rem;
-    height: 100vh;
+    // height: 100vh;
 
     .d-flex {
-        display: flex;
+        align-items: center;
     }
 
     .text {
@@ -19,16 +19,16 @@
             align-items: center;
             color: $brand-green-light;
             font-size: 1.6rem;
-            font-weight: 600;
+            font-weight: 500;
         }
 
         .title {
             font-family: "Montserrat" sans-serif;
-            font-size: 4rem;
-            line-height: 110%;
-            font-weight: bold;
+            font-size: 4.5rem;
+            line-height: 120%;
+            font-weight: 600;
 
-            color: $brand-green-dark;
+            color: $gray-500;
             max-width: 74rem;
         }
         .description {
@@ -36,11 +36,10 @@
 
             margin-top: 3.4rem;
             margin-bottom: 4rem;
-            font-weight: 500;
+            font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
             color: $gray-400;
-            opacity: 0.7;
         }
 
         .infos {
