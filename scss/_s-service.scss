@@ -1,6 +1,7 @@
 .s-service {
     padding: 90px 0;
-    background: #fcfcfc;
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(225 255 247) 100%);
+
     .box-container {
         display: flex;
         align-items: center;
@@ -8,6 +9,7 @@
         gap: 50px;
         margin-top: 80px;
     }
+
     .box {
         width: 30%;
         background-color: $white;

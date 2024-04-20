@@ -7,41 +7,39 @@
         margin-top: 8rem;
     }
 
-    .image {
+    &__image {
         width: 45%;
     }
 
-    .text {
+    &__text {
         width: 50%;
     }
 
     // responsive
     @include responsive(800px) {
-    }
-
-    @include responsive(640px) {
         .d-flex {
             flex-direction: column-reverse;
             margin-top: 2.5rem;
-            .image {
-                width: 100%;
-                margin-top: 4rem;
+        }
+
+        &__image {
+            width: 100%;
+            margin-top: 4rem;
+        }
+
+        &__text {
+            width: 100%;
+
+            p {
+                text-align: left;
             }
 
-            .text {
-                width: 100%;
-                p {
-                    text-align: left;
-                }
+            h4 {
+                text-align: center;
+            }
 
-                h4 {
-                    text-align: center;
-                }
-
-                img {
-                    // display: none;
-                    margin: 0 auto;
-                }
+            img {
+                margin: 0 auto;
             }
         }
     }
