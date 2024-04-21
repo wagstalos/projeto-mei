@@ -22,10 +22,11 @@
 }
 
 .btn-secondary {
+    font-family: "Nunito", sans-serif;
     background-color: rgba(0, 0, 0, 0);
     color: #607d8b;
-    transition: background-color 0.5s;
-    font-family: "Nunito", sans-serif;
+    transition: all 0.3s ease-in;
+
     border: 1px solid $brand-green-light;
 
     &:hover {

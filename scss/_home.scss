@@ -7,6 +7,18 @@
         align-items: center;
     }
 
+    .btn-primary {
+        svg {
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            svg {
+                transform: translateX(8px);
+            }
+        }
+    }
+
     &__text {
         margin-bottom: 3.9rem;
         width: 50%;

@@ -56,9 +56,19 @@
 
         position: absolute;
         right: 14px;
-        top: 0;
+        bottom: 14px;
 
         margin-top: 16px;
+
+        svg {
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            svg {
+                transform: translatex(3px);
+            }
+        }
     }
 
     @include responsive(800px) {
