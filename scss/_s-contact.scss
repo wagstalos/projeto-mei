@@ -13,6 +13,14 @@
 
         .item {
             width: 31%;
+            p {
+                color: $gray-300;
+            }
+            &:last-child {
+                p {
+                    max-width: 80%;
+                }
+            }
         }
     }
 
@@ -79,14 +87,6 @@
                 width: 100%;
                 margin-bottom: $gutter * 2;
             }
-        }
-
-        .btn-contact {
-            position: absolute;
-            right: 14px;
-            top: 0;
-
-            margin-top: 16px;
         }
     }
 }
