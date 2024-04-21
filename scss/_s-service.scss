@@ -59,8 +59,9 @@
         }
 
         .btn-price {
-            background-color: #aaffe85b;
-            color: $green;
+            // background-color: #aaffe85b;
+            background-color: #25cb9e;
+            color: $white;
             font-weight: 600;
             padding: 8px 16px;
             border-radius: 4px;
@@ -79,7 +80,7 @@
             margin-bottom: $gutter * 3;
 
             &:hover {
-                background-color: #aaffe8da;
+                background-color: $brand-green;
             }
         }
 
