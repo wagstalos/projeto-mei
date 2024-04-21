@@ -13,6 +13,13 @@
 
     &__text {
         width: 50%;
+        &-title {
+            font-family: "Nunito", sans-serif;
+            line-height: 120%;
+            strong {
+                color: $brand-green;
+            }
+        }
     }
 
     // responsive
@@ -34,8 +41,8 @@
                 text-align: left;
             }
 
-            h4 {
-                text-align: center;
+            &-title {
+                font-family: "Nunito", sans-serif;
             }
 
             img {

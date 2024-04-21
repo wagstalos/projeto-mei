@@ -1,7 +1,8 @@
 .s-hero {
     width: 100%;
-    background-color: $white;
     padding-top: 15.1rem;
+    background: linear-gradient(180deg, rgba(218, 247, 245, 0) 6.5%, #daf7f5 60.89%, rgba(218, 247, 245, 0) 98.72%);
+
 
     .d-flex {
         align-items: center;
@@ -30,7 +31,6 @@
 
         .description {
             max-width: 50rem;
-
             margin-top: 3.4rem;
             margin-bottom: 4rem;
             font-weight: 400;
@@ -54,7 +54,7 @@
             }
 
             &__description {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
                 color: $gray-400;
             }
         }

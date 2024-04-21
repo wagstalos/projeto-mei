@@ -9,11 +9,7 @@ header {
 
     border-bottom: 2px solid #ecf2fb;
     background-color: $white;
-
-    .btn-secondary {
-        border: none;
-    }
-
+    
     .container {
         @include flex(row, center, space-between);
     }

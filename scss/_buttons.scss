@@ -15,29 +15,22 @@
     color: $brand-black;
     transition: background-color 0.3s;
     color: $white;
+
     &:hover {
         background-color: $brand-green;
     }
 }
 
 .btn-secondary {
+    background-color: rgba(0, 0, 0, 0);
+    color: #607d8b;
+    transition: background-color 0.5s;
+    font-family: "Nunito", sans-serif;
     border: 1px solid $brand-green-light;
-    background-color: transparent;
-    font-weight: 500;
-    color: $brand-green-light;
-    transition: all 0.3s;
+
     &:hover {
-        background-color: $brand-green;
+        background-color: $brand-green-light;
         color: $white;
-    }
-    &.white {
-        border: 1px solid $white;
-        color: $white;
-        transition: all 0.3s;
-        &:hover {
-            background-color: $white;
-            color: $brand-yellow;
-        }
     }
 }
 
