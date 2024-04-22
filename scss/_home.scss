@@ -1,6 +1,10 @@
 .s-hero {
     width: 100%;
-    padding-top: 15.1rem;
+    // padding-top: 15.1rem;
+    padding-top: 8rem;
+    height: 100vh;
+    @include flex(row, center, center);
+
     background: linear-gradient(180deg, rgba(218, 247, 245, 0) 6.5%, #daf7f5 60.89%, rgba(218, 247, 245, 0) 98.72%);
 
     .d-flex {
@@ -49,26 +53,6 @@
             line-height: 150%;
             color: $gray-400;
         }
-
-        .infos {
-            max-width: 95%;
-            margin-top: 7rem;
-
-            li {
-                border-bottom: 1px solid #efefef;
-                padding: 9px;
-            }
-
-            &__title {
-                color: $gray-500;
-                font-size: 2.5rem;
-            }
-
-            &__description {
-                font-size: 1.5rem;
-                color: $gray-400;
-            }
-        }
     }
 
     &__image {
@@ -80,8 +64,43 @@
         }
     }
 
+    .infos {
+        max-width: 50%;
+        // margin-top: 7rem;
+
+        li {
+            border-bottom: 1px solid #efefef;
+            padding: 9px;
+        }
+
+        &__title {
+            color: $gray-500;
+            font-size: 2.5rem;
+        }
+
+        &__description {
+            font-size: 1.5rem;
+            color: $gray-400;
+        }
+    }
+
+    @include responsive(1024px) {
+        &__text {
+            .title {
+                font-size: 3rem;
+                line-height: 110%;
+            }
+        }
+
+        .infos {
+            max-width: 70%;
+            margin-left: 15%;
+        }
+    }
+
     @include responsive(800px) {
         padding-top: 12rem;
+        height: auto;
 
         .d-flex {
             flex-direction: column;
@@ -122,6 +141,12 @@
 
         &__image {
             width: 100%;
+        }
+
+        .infos {
+            max-width: 100%;
+            margin-left: 0;
+            flex-direction: row;
         }
     }
 

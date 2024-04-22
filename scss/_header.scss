@@ -9,9 +9,14 @@ header {
 
     border-bottom: 2px solid #ecf2fb;
     background-color: $white;
-    
+
     .container {
         @include flex(row, center, space-between);
+    }
+
+    .btn-secondary {
+        padding: 2rem 2rem;
+        line-height: 0;
     }
 
     nav {
@@ -47,15 +52,19 @@ header {
         }
     }
 
-    @include responsive(800px) {
+    @include responsive(1024) {
         nav {
             ul {
-                display: none;
+                li {
+                    &:not(:first-child) {
+                        margin-left: 2.8rem;
+                    }
+                }
             }
         }
     }
 
-    @include responsive(600px) {
+    @include responsive(840px) {
         height: 7rem;
         display: flex;
         align-items: center;
