@@ -95,7 +95,7 @@
                 margin: 0 auto;
                 // width: 80%;
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 flex-direction: row;
             }
 
@@ -125,9 +125,9 @@
         }
     }
 
-    @include responsive(600px) {
+    @include responsive(400px) {
         .btn-primary {
-            width: 80%;
+            width: 100%;
         }
     }
 }
