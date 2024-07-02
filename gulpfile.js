@@ -6,6 +6,18 @@ const concat = require("gulp-concat");
 const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
 
+async function convertWebp() {
+  const webp = await import("gulp-webp").then((mod) => mod.default);
+  console.log("Iniciando a conversão de PNG para WebP...");
+
+  return gulp
+    .src("img/**/*.{png,jpg}")
+    .pipe(webp())
+    .on("error", (err) => console.error("Erro ao converter imagens: ", err))
+    .pipe(gulp.dest("img"))
+    .on("end", () => console.log("Conversão concluída!"));
+}
+
 function compileSass() {
   return gulp
     .src("scss/*.scss")
@@ -68,12 +80,15 @@ function browser() {
 
 gulp.task("browser-sync", browser);
 
+gulp.task("convert-webp", convertWebp);
+
 function watch() {
   gulp.watch("scss/*.scss", compileSass);
   gulp.watch("css/lib/*.css", pluginsCSS);
   gulp.watch("*.html").on("change", browserSync.reload);
   gulp.watch("js/scripts/*", gulpJs);
   gulp.watch("js/lib/*.js", pluginsJs);
+  gulp.watch("src/img/**/*.png", gulp.series("convert-webp"));
 }
 
 gulp.task("watch", watch);
@@ -86,6 +101,7 @@ gulp.task(
     "sass",
     "alljs",
     "pluginjs",
-    "plugincss"
+    "plugincss",
+    "convert-webp"
   )
 );
